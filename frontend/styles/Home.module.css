@@ -7,7 +7,9 @@
   min-height: 100vh;
 }
 
-input{width: 800px;}
+input {
+  width: 800px;
+}
 
 .description {
   display: inherit;
