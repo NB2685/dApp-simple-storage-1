@@ -140,39 +140,21 @@ export default function Home() {
         <link rel="icon" href="/logo-charmingdata-small.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <div className={styles.description}>
-          <div>
-            <a
-              href="https://www.youtube.com/@CharmingData/videos"
-              target="_blank"
-            >
-              By{" "}
-              <Image
-                src="/logocharmingdata.png"
-                alt="charmingdata Logo"
-                width={25}
-                height={25}
-                priority
-              />{" "}
-              Charming Data
-            </a>
-          </div>
-        </div>
+
 
         <div>
-          <h1 className={styles.title}>Welcome to the Simple Storage dApp!</h1>
+          <h1 className={styles.title}>Welcome to the Contract storage!</h1>
           <div className={styles.description}>
-            A contract where you can record text on the bockchain for life.
+            This smart contract can record any text on the blockchain for life.
           </div>
           <br></br>
           <div>
             <label>Write Your Sentence: </label>
-            <input
-              type="text"
+            <textarea 
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
               style={{ marginRight: ".5rem" }}
-            />
+            /><textarea>
             {renderButton()}
           </div>
           <br></br>
@@ -181,63 +163,13 @@ export default function Home() {
               style={{ cursor: "pointer", backgroundColor: "blue" }}
               onClick={getMySentence}
             >
-              Get Stored Sentence
+              Get Stored Text
             </button>
             {loading2 ? <p>Loading...</p> : <p>{theStoredSen}</p>}
           </div>
         </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://www.linkedin.com/in/charmingdata/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              LinkedIn <span>-&gt;</span>
-            </h2>
-            <p>Connect with us to stay on top of the latest blockchain news.</p>
-          </a>
 
-          <a
-            href="https://github.com/charmingdata"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              GitHub <span>-&gt;</span>
-            </h2>
-            <p>
-              Follow the repo to get notified of new smart contracts & dApps.
-            </p>
-          </a>
-
-          <a
-            href="https://www.patreon.com/charmingdata"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Patreon <span>-&gt;</span>
-            </h2>
-            <p>Your support keeps Charming Data running.</p>
-          </a>
-
-          <a
-            href="https://www.youtube.com/@CharmingData/videos"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2>
-              Youtube <span>-&gt;</span>
-            </h2>
-            <p>Join us to receive notifications of future video tutorials.</p>
-          </a>
-        </div>
       </main>
     </div>
   );
