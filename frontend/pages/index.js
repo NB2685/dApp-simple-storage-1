@@ -150,12 +150,14 @@ export default function Home() {
           <br></br>
           <div>
             <label>Write Your Sentence: </label>
+    <br></br>
             <input
               type="text" name="box"
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
               style={{ height: "800px" }}
             />
+<br></br>
             {renderButton()}
           </div>
           <br></br>
