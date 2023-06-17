@@ -149,13 +149,13 @@ export default function Home() {
           </div>
           <br></br>
           <div>
-            <label>Write Your Sentence: </label>
+            <label>Write Your Sentence: </label><br>
             <input
               type="text"
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
-              style={{ marginRight: ".5rem" }}
-            />
+              style={{ marginRight: ".5rem", width: "800px", height: "600px" }}
+            /><br>
             {renderButton()}
           </div>
           <br></br>
