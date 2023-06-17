@@ -138,9 +138,6 @@ export default function Home() {
         <meta name="description" content="Storage-Dapp" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-charmingdata-small.ico" />
-<style type="text/css">
-    .box{display:block;}
-    </style>
     </Head>
       <main className={`${styles.main} ${inter.className}`}>
 
