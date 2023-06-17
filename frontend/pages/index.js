@@ -158,7 +158,7 @@ export default function Home() {
             /><br>
             {renderButton()}
           </div>
-          <br></br>
+          <br><br>
           <div>
             <button
               style={{ cursor: "pointer", backgroundColor: "blue" }}
