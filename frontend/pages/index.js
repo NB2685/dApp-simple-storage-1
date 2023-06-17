@@ -155,7 +155,7 @@ export default function Home() {
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
               style={{ marginRight: ".5rem" }}
-            /><br>
+            />
             {renderButton()}
           </div>
           <br><br>
