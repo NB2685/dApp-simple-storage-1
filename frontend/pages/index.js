@@ -15,7 +15,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [loading2, setLoading2] = useState(false);
 
-  const [sentenceWritten, setSentenceWritten] = useState("So much empty!");
+  const [sentenceWritten, setSentenceWritten] = useState("Write here!");
   const [theStoredSen, getTheStoredSen] = useState("");
 
   const web3ModalRef = useRef();
