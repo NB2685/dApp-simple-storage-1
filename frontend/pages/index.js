@@ -149,7 +149,7 @@ export default function Home() {
           </div>
           <br></br>
           <div>
-            <label>Write Your Sentence: </label><br>
+            <label>Write Your Sentence: </label>
             <input
               type="text"
               value={sentenceWritten}
