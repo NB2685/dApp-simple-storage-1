@@ -156,7 +156,6 @@ export default function Home() {
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
               style={{ height: "800px" }}
-              style={{ width: "800px" }}
 />
 <br></br>
             {renderButton()}
