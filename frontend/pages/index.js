@@ -15,7 +15,7 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
   const [loading2, setLoading2] = useState(false);
 
-  const [sentenceWritten, setSentenceWritten] = useState("Write here");
+  const [sentenceWritten, setSentenceWritten] = useState("So much empty!");
   const [theStoredSen, getTheStoredSen] = useState("");
 
   const web3ModalRef = useRef();
@@ -158,7 +158,7 @@ export default function Home() {
             />
             {renderButton()}
           </div>
-          <br><br>
+          <br></br>
           <div>
             <button
               style={{ cursor: "pointer", backgroundColor: "blue" }}
