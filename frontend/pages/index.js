@@ -138,7 +138,10 @@ export default function Home() {
         <meta name="description" content="Storage-Dapp" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-charmingdata-small.ico" />
-      </Head>
+<style type="text/css">
+    .box{display:block;}
+    </style>
+    </Head>
       <main className={`${styles.main} ${inter.className}`}>
 
 
@@ -151,7 +154,7 @@ export default function Home() {
           <div>
             <label>Write Your Sentence: </label>
             <input
-              type="text"
+              type="text" name="box"
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
               style={{ marginRight: ".5rem" }}
