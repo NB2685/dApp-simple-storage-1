@@ -155,8 +155,9 @@ export default function Home() {
               type="text" name="box"
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
-              style={{ height: "800px";width: "800px" }}
-            />
+              style={{ height: "800px" }}
+              style={{ width: "800px" }}
+/>
 <br></br>
             {renderButton()}
           </div>
