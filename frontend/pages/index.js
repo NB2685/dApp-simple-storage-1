@@ -134,7 +134,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Storage dApp</title>
+        <title>Contract Storage</title>
         <meta name="description" content="Storage-Dapp" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo-charmingdata-small.ico" />
@@ -150,11 +150,12 @@ export default function Home() {
           <br></br>
           <div>
             <label>Write Your Sentence: </label>
-            <textarea 
+            <input
+              type="text"
               value={sentenceWritten}
               onChange={(e) => setSentenceWritten(e.target.value)}
               style={{ marginRight: ".5rem" }}
-            /><textarea>
+            />
             {renderButton()}
           </div>
           <br></br>
